@@ -22,7 +22,7 @@ namespace NetCore3WebAPI
         public Startup(Microsoft.Extensions.Hosting.IHostingEnvironment env)
         {
             IConfigurationRoot appSettings = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath).AddJsonFile("appSettings.json").Build();
+                .SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.json").Build();
 
             Configuration = appSettings;
         }
